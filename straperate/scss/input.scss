@@ -1,0 +1,55 @@
+.straperate-input {
+
+	* {
+    box-sizing: border-box;
+  	}
+	
+	label {
+		font-size: 20px;
+	}
+
+	input[type="text"] {
+		font-size: 16px;
+		padding-top: 3px;
+	}
+
+	input[type="radio"], input[type="checkbox"] {
+		visibility: hidden;
+	    position: relative;
+	    height: 26px;
+	    width: 26px;
+	    margin: 0;
+	}
+
+	input[type="radio"]:before, input[type="checkbox"]:before {
+	    content: '';
+	    visibility: visible;
+	    border: 1px solid black;
+	    height: 28px;
+	    width: 28px;
+	    display: block;
+	    background-color: rgba(255, 255, 255, 0.35);
+	    cursor: pointer;
+  	}
+
+  	input[type="checkbox"]:checked:after, input[type="radio"]:checked:after {
+	    content: '';
+	    visibility: visible;
+	    display: block;
+	    height: 14px;
+	    width: 14px;
+	    position: absolute;
+	    top: 8px;
+	    left: 8px;
+
+	    background-color: black;
+  	}
+
+  	.x-box {
+	  	input[type="radio"]:checked:after {
+	  		content: 'X';
+	  		background-color: none;
+  		}
+  	}
+
+}
