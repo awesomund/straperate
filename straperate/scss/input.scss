@@ -32,7 +32,7 @@
 	    cursor: pointer;
   	}
 
-  	input[type="checkbox"]:checked:after, input[type="radio"]:checked:after {
+  	input[type="radio"]:checked:after {
 	    content: '';
 	    visibility: visible;
 	    display: block;
@@ -45,11 +45,69 @@
 	    background-color: black;
   	}
 
-  	.x-box {
-	  	input[type="radio"]:checked:after {
-	  		content: 'X';
-	  		background-color: none;
-  		}
+  	input[type="checkbox"]:checked:after {
+  		content: 'X';
+		visibility: visible;
+		display: block;
+		height: 14px;
+		width: 14px;
+		position: absolute;
+		top: 4px;
+		left: 9px;
+		background-color: none;
+		font-size: 20px;
   	}
+
+  	input[type="button"] {
+  		background-color: steelblue;
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    border-radius:6px;
+	    color: #fff;
+	    font-family: 'Oswald';
+	    font-size: 20px;
+	    text-decoration: none;
+	    cursor: pointer;
+	    border:none;
+	}
+
+	input[type="button"]:active {
+		background: darken(steelblue, 10%);
+	}
+
+	//button classes:
+	.btn {
+		background-color: #ccc;
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    border-radius:6px;
+	    color: #fff;
+	    font-family: 'Helvetica';
+	    font-size: 20px;
+	    text-decoration: none;
+	    cursor: pointer;
+	    border:none;
+	    padding: 3px 10px;
+	}
+
+	.btn:active {
+		background-color: darken(#ccc, 20%);
+	}
+
+    .primary {
+    	background-color: steelblue;
+    }
+
+    .primary:active {
+    	background-color: darken(steelblue, 10%);
+    }
+
+    .delete {
+    	background-color: darken(tomato, 20%);
+    }
+
+    .delete:active {
+    	background-color: darken(tomato, 30%);
+    }
 
 }
