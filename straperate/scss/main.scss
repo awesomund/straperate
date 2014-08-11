@@ -20,7 +20,7 @@ h3{
 }
 
 .constrained{
-  max-width: 640px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -46,3 +46,4 @@ h3{
 @import 'layout';
 @import 'columns';
 @import 'input';
+@import 'gallery';
