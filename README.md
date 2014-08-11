@@ -6,10 +6,14 @@ This is a sandbox project for some CSS-fun. Contains some useful CSS-snippets an
 How to run it:
 ==============
 
-
 This project uses [harp.js](http://harpjs.com/).
 
 Navigate to `straperate/straperate` and run:
+
+`npm install -g harp`
+
+=======
+This project uses [harp.js](http://harpjs.com/). Navigate to `straperate/straperate` and run:
 
 `npm install -g harp`
 
