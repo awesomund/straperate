@@ -12,9 +12,4 @@ Navigate to `straperate/straperate` and run:
 
 `npm install -g harp`
 
-=======
-This project uses [harp.js](http://harpjs.com/). Navigate to `straperate/straperate` and run:
-
-`npm install -g harp`
-
 `harp server`
